@@ -11,13 +11,13 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.Zekki_kaihi_alarm.AppBarOverlay">
+        android:theme="@style/Theme.Zekki_kaihi_alarm.AppBarOverlay"
+        android:background="#181717">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#181717"
             app:popupTheme="@style/Theme.Zekki_kaihi_alarm.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
