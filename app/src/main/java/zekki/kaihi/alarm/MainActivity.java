@@ -1,5 +1,6 @@
 package zekki.kaihi.alarm;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -49,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent to_settings = new Intent(getApplication(), Settings.class);
+            startActivity(to_settings);
         } else if (id == R.id.action_delete) {
             return true;
         } else if (id == R.id.action_license) {
