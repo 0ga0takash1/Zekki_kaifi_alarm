@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             Intent to_settings = new Intent(getApplication(), Settings.class);
             startActivity(to_settings);
+            return true;
         } else if (id == R.id.action_delete) {
             return true;
         } else if (id == R.id.action_license) {
