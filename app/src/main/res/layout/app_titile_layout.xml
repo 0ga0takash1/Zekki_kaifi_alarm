@@ -5,15 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/app_name_textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="77dp"
+        android:layout_marginTop="85dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
-        android:text="\n\n絶起回避アラーム\nEXT-LARM"
+        android:text="絶起回避アラーム\nEXT-LARM"
+        android:textAllCaps="false"
         android:textColor="@color/white2"
         android:textSize="30dp"
-        app:layout_anchorGravity="center" />
+        app:layout_anchorGravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
