@@ -1,7 +1,7 @@
 <resources>
     <!--    <string name="app_name">Zekki_kaihi_alarm</string>-->
     <string name="app_name">絶起回避アラーム\nEXT-LARM</string>
-    <string name="app_label_name">絶起回避</string>
+    <string name="app_label_name">EXT-LARM</string>
     <string name="action_settings">Settings</string>
     <string name="action_delete">Delete</string>
     <string name="action_license">License</string>

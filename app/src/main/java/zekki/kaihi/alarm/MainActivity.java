@@ -49,14 +49,12 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            Intent to_settings = new Intent(getApplication(), Settings.class);
-            startActivity(to_settings);
-            return true;
-        } else if (id == R.id.action_delete) {
-            return true;
-        } else if (id == R.id.action_license) {
-            return true;
+        if (item.getItemId() == R.id.action_settings) {
+            startActivity(new Intent(this, Settings.class));
+        } else if (item.getItemId() == R.id.action_delete) {
+
+        } else if (item.getItemId() == R.id.action_license) {
+
         }
 
         return super.onOptionsItemSelected(item);
