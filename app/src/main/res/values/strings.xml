@@ -34,4 +34,5 @@
     <string name="alarm_type_AV">Alarm and Vibration</string>
     <string name="alarm_type_A">Alarm Only</string>
     <string name="alarm_type_V">Vibration Only</string>
+    <string name="title_activity_settings">SettingsActivity</string>
 </resources>

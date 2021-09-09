@@ -49,10 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (item.getItemId() == R.id.action_settings) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.nav_host_fragment, new Settings())
-                    .addToBackStack(null)
-                    .commit();
+            Intent intent = new Intent(getApplication(), R.id.action_settings);
+            startActivity(intent);
         } else if (item.getItemId() == R.id.action_delete) {
 
         } else if (item.getItemId() == R.id.action_license) {

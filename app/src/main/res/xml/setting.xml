@@ -4,11 +4,6 @@
 
     <PreferenceCategory app:title="@string/sound_header">
 
-<!--        <EditTextPreference-->
-<!--            app:key="alarm_type"-->
-<!--            app:title="@string/alarm_type_title"-->
-<!--            app:useSimpleSummaryProvider="true" />-->
-
         <ListPreference
             app:defaultValue="Alarm and Vibration"
             app:entries="@array/alarm_type_entries"
