@@ -9,7 +9,8 @@
             app:entries="@array/alarm_type_entries"
             app:entryValues="@array/alarm_type_values"
             app:key="alarm_type"
-            app:title="@string/alarm_type_title" />
+            app:title="@string/alarm_type_title"
+            android:summary="%s"/>
 
 <!--        <RingtonePreference-->
 <!--            android:defaultValue="@string/alarm_type_AV"-->

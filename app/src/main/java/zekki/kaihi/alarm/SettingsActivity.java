@@ -30,4 +30,11 @@ public class SettingsActivity extends AppCompatActivity {
             setPreferencesFromResource(R.xml.setting, rootKey);
         }
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+
+        return super.onSupportNavigateUp();
+    }
 }
