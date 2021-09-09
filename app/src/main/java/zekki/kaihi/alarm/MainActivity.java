@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (item.getItemId() == R.id.action_settings) {
-            Intent intent = new Intent(getApplication(), R.id.action_settings);
+            Intent intent = new Intent(getApplication(), SettingsActivity.class);
             startActivity(intent);
         } else if (item.getItemId() == R.id.action_delete) {
 
