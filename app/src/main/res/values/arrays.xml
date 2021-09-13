@@ -22,6 +22,20 @@
         <item>A</item>
         <item>V</item>
     </string-array>
+
+    <string-array name="alarm_schedule_entries">
+        <item>Recent</item>
+        <item>Everyday</item>
+        <item>Weekday</item>
+        <item>Weekend</item>
+    </string-array>
+
+    <string-array name="alarm_schedule_values">
+        <item>R</item>
+        <item>Ev</item>
+        <item>Wd</item>
+        <item>We</item>
+    </string-array>
     <!-- Reply Preference -->
     <string-array name="reply_entries">
         <item>Reply</item>
