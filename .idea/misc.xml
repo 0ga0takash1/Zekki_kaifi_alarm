@@ -8,9 +8,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/activity_main.xml" value="0.1693840579710145" />
+        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/app_titile_layout.xml" value="0.1693840579710145" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/content_main.xml" value="0.1693840579710145" />
+        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/fragment_alarm_list.xml" value="0.10885416666666667" />
+        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/fragment_alarm_list_layout.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/fragment_first.xml" value="0.1693840579710145" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/settings_activity.xml" value="0.17572463768115942" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/menu/menu_main.xml" value="0.25416666666666665" />
