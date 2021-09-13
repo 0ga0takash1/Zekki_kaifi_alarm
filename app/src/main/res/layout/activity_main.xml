@@ -35,7 +35,6 @@
     <include
         android:id="@+id/include"
         layout="@layout/content_main"
-        android:layout_height="621dp"
         android:background="#212121"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center" />
