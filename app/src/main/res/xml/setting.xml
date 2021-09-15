@@ -28,7 +28,7 @@
             app:entries="@array/alarm_schedule_entries"
             app:entryValues="@array/alarm_schedule_values"
             app:key="alarm_schedule"
-            app:title="@string/alarm_schedule_title"
+            app:title="@string/alarm_timing_title"
             android:summary="%s"/>
     </PreferenceCategory>
 

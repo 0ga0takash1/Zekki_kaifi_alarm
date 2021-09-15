@@ -31,7 +31,7 @@
     <string name="sound_header">Sound</string>
     <string name="alarm_header">Alarm settings</string>
     <string name="alarm_type_title">Alarm type</string>
-    <string name="alarm_schedule_title">Schedule</string>
+    <string name="alarm_timing_title">Timing</string>
     <string name="alarm_sound">Alarm sound</string>
     <string name="alarm_type_AV">Alarm and Vibration</string>
     <string name="alarm_type_A">Alarm Only</string>

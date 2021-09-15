@@ -25,6 +25,7 @@
 
     <string-array name="alarm_schedule_entries">
         <item>Recent</item>
+        <item>Tomorrow</item>
         <item>Everyday</item>
         <item>Weekday</item>
         <item>Weekend</item>
@@ -32,7 +33,8 @@
 
     <string-array name="alarm_schedule_values">
         <item>R</item>
-        <item>Ev</item>
+        <item>T</item>
+        <item>E</item>
         <item>Wd</item>
         <item>We</item>
     </string-array>
