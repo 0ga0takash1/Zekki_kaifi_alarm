@@ -37,4 +37,11 @@
     <string name="alarm_type_A">Alarm Only</string>
     <string name="alarm_type_V">Vibration Only</string>
     <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Input Activity -->
+    <string name="InputTabLeft">About Alarm</string>
+    <string name="InputTabCenter">Time</string>
+    <string name="InputTabRight">Sub Alarm</string>
+    <string name="SaveBottom">保存</string>
+
 </resources>

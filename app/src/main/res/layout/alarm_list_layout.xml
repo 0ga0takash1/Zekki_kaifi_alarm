@@ -9,6 +9,7 @@
     card_view:cardCornerRadius="7dp"
     card_view:cardElevation="5dp"
     android:foreground="?android:attr/selectableItemBackground">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,12 +18,11 @@
             android:id="@+id/alarm_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/black3"
             android:gravity="start"
             android:textSize="5sp"
-            android:background="@color/black3"
             card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
-        />
+            card_view:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/alarm_time"
@@ -30,9 +30,8 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:textSize="20sp"
-            card_view:layout_constraintTop_toBottomOf="@+id/alarm_timing"
             card_view:layout_constraintStart_toStartOf="parent"
-        />
+            card_view:layout_constraintTop_toBottomOf="@+id/alarm_timing" />
 
         <TextView
             android:id="@+id/sub_alarm"
@@ -40,24 +39,22 @@
             android:layout_height="wrap_content"
             android:textSize="5sp"
             card_view:layout_constraintBottom_toBottomOf="@+id/alarm_time"
-            card_view:layout_constraintLeft_toLeftOf="@+id/alarm_time"
-        />
+            card_view:layout_constraintLeft_toLeftOf="@+id/alarm_time" />
 
         <TextView
             android:id="@+id/alarm_timing"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="11sp"
-            card_view:layout_constraintTop_toBottomOf="@+id/alarm_time"
             card_view:layout_constraintLeft_toLeftOf="parent"
-        />
+            card_view:layout_constraintTop_toBottomOf="@+id/alarm_time" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/alarm_switch"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
-        />
+            />
 
         <Button
             android:id="@+id/button"
