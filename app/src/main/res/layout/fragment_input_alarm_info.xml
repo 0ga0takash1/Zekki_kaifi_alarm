@@ -12,17 +12,27 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColorHint="@color/white2"
+            app:boxBackgroundColor="@color/black2"
+            app:boxStrokeColor="@color/white2"
+            app:hintTextColor="@color/white2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/alarm_name_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="アラームタイトルを入力" />
+                android:hint="@string/AlarmTitleHint"
+                android:inputType="text"
+                android:textColor="@color/white2"
+                android:theme="@style/EditTextStyle" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

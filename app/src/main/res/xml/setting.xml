@@ -19,7 +19,6 @@
 <!--            android:showDefault="true"-->
 <!--            android:showSilent="true"-->
 <!--            android:title="@string/alarm_sound" />-->
-
     </PreferenceCategory>
 
     <PreferenceCategory app:title="@string/alarm_header">

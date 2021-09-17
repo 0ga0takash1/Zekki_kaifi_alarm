@@ -28,6 +28,8 @@ public class InputTabAdapter extends FragmentPagerAdapter {
 
         Fragment fragment = null;
         if (position == 0) fragment = new InputAlarmInfoFragment();
+        else if (position == 1) fragment = new InputTimeFragment();
+        else fragment = new InputSubAlarmFragment();
         return fragment;
     }
 

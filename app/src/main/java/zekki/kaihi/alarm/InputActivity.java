@@ -1,21 +1,22 @@
 package zekki.kaihi.alarm;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.QuickContactBadge;
-import android.widget.Toolbar;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.TimePicker;
 
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.Calendar;
+
 public class InputActivity extends AppCompatActivity {
+    private int reqCode = -1;
     private static int MENU_DELETE_ID = 2;
 
     @Override
@@ -23,38 +24,50 @@ public class InputActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input2);
 
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_input);
-//        toolbar.setNavigationIcon(R.drawable.ic_baseline_close_24);
-//        toolbar.setNavigationOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent();
-//                setResult(RESULT_CANCELED, i);
-//                finish();
-//            }
-//        });
+        ImageView back = findViewById(R.id.back_button);
+        TextView save = findViewById(R.id.save_button);
+        EditText alarm_name = findViewById(R.id.alarm_name_edit);
+        TimePicker tp = findViewById(R.id.time_picker);
 
-//        toolbar.inflateMenu(R.menu.menu_edit);
+        DatabaseHelper helper = DatabaseHelper.getInstance(InputActivity.this);
 
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setTitle("");
-        }
+        // x button
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
-//        InputTabAdapter InputTabAdapter = new InputTabAdapter(this, getSupportFragmentManager());
+        // save button
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-//        ViewPager viewPager = findViewById(R.id.input_vp);
-//        viewPager.setAdapter(InputTabAdapter);
+                Intent intent = getIntent();
+                reqCode = intent.getIntExtra(getString(R.string.request_code),-1);
+                int alarmID = -1;
+                int hour = tp.getHour(), minute = tp.getMinute();
 
-//        TabLayout tabLayout = (TabLayout) findViewById(R.id.input_tab);
-//        tabLayout.setupWithViewPager(viewPager);
-    }
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTimeInMillis(System.currentTimeMillis());
+                calendar.set(Calendar.HOUR_OF_DAY, hour);
+                calendar.set(Calendar.MINUTE, minute);
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        finish();
+                // アラーム名の設定
+                String alarmName = alarm_name.getText().toString();
+                String alarmTime = String.format("%02d", hour) + ":"+ String.format("%02d", minute);
+                finish();
+            }
+        });
 
-        return super.onSupportNavigateUp();
+        // Tab layout
+        InputTabAdapter InputTabAdapter = new InputTabAdapter(this, getSupportFragmentManager());
+
+        ViewPager viewPager = findViewById(R.id.input_vp);
+        viewPager.setAdapter(InputTabAdapter);
+
+        TabLayout tab = findViewById(R.id.input_tab);
+        tab.setupWithViewPager(viewPager);
     }
 }

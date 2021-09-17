@@ -53,24 +53,16 @@
             android:id="@+id/alarm_switch"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             />
 
-        <Button
-            android:id="@+id/button"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:background="@color/black2"
-            android:minWidth="0dp"
-            android:minHeight="0dp"
-            android:padding="1dp"
             android:text="@string/action_settings"
-            android:textColor="@color/purple_500"
-            android:textSize="11sp"
-            card_view:layout_constraintRight_toRightOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
-            tools:ignore="TouchTargetSizeCheck" />
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/alarm_switch"
+        />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

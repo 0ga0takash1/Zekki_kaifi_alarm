@@ -8,9 +8,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.2703125" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/activity_input.xml" value="0.176" />
-        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/activity_input2.xml" value="0.15579710144927536" />
+        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/activity_input2.xml" value="0.264" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/alarm_list_layout.xml" value="0.34661723818350326" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/app_titile_layout.xml" value="0.1693840579710145" />
@@ -19,10 +20,12 @@
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/fragment_first.xml" value="0.1693840579710145" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/fragment_input.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/fragment_input_alarm_info.xml" value="0.264" />
+        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/fragment_input_sub_alarm.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/fragment_input_tab_about_alarm.xml" value="0.4742468415937804" />
+        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/fragment_input_time.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/ic_close_white_24dp.xml" value="0.15579710144927536" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/layout/settings_activity.xml" value="0.17572463768115942" />
-        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/menu/menu_edit.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/menu/menu_edit.xml" value="0.264" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/menu/menu_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/xml/root_preferences.xml" value="0.264" />
         <entry key="..\:/Users/yuit0/AndroidStudioProjects/Zekki_kaihi_alarm/app/src/main/res/xml/setting.xml" value="0.264" />

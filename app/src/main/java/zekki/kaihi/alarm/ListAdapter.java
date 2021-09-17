@@ -31,10 +31,6 @@ public class ListAdapter extends RecyclerView.Adapter<AlarmInfoHolder> {
             public void onClick(View v) {
                 Context context = parent.getContext();
                 int position = holder.getAdapterPosition();
-//                Intent i = new Intent(context, InputActivity.class);
-//                i.putExtra(context.getString(R.string.request_code),MainActivity.EDIT_REQ_CODE);
-//                i.putExtra(context.getString(R.string.alarm_id),data.get(position).getAlarmID());
-//                ((Activity) context).startActivityForResult(i,MainActivity.EDIT_REQ_CODE);
             }
         });
         return holder;
