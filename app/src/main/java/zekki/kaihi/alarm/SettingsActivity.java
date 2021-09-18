@@ -1,6 +1,9 @@
 package zekki.kaihi.alarm;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,11 +21,21 @@ public class SettingsActivity extends AppCompatActivity {
                     .replace(R.id.settings, new SettingsFragment())
                     .commit();
         }
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setTitle("設定");
-        }
+
+        ImageView back = findViewById(R.id.back_button_setting);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        TextView save = findViewById(R.id.save_button_setting);
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     public static class SettingsFragment extends PreferenceFragmentCompat {
@@ -30,12 +43,5 @@ public class SettingsActivity extends AppCompatActivity {
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             setPreferencesFromResource(R.xml.setting, rootKey);
         }
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        finish();
-
-        return super.onSupportNavigateUp();
     }
 }

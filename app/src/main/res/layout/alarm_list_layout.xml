@@ -18,9 +18,10 @@
             android:id="@+id/alarm_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/black3"
+            android:background="@color/material_on_primary_disabled"
             android:gravity="start"
             android:textSize="5sp"
+            android:padding="8dp"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent" />
 
@@ -29,40 +30,49 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
-            android:textSize="20sp"
+            android:textSize="16sp"
+            android:padding="8dp"
             card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@+id/alarm_timing" />
+            card_view:layout_constraintTop_toBottomOf="@+id/alarm_name" />
 
         <TextView
             android:id="@+id/sub_alarm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="5sp"
+            android:padding="8dp"
             card_view:layout_constraintBottom_toBottomOf="@+id/alarm_time"
-            card_view:layout_constraintLeft_toLeftOf="@+id/alarm_time" />
+            card_view:layout_constraintStart_toEndOf="@+id/alarm_time"
+            />
 
         <TextView
             android:id="@+id/alarm_timing"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="11sp"
+            android:textSize="8sp"
+            android:padding="8dp"
             card_view:layout_constraintLeft_toLeftOf="parent"
             card_view:layout_constraintTop_toBottomOf="@+id/alarm_time" />
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/alarm_switch"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
-
         <TextView
+            android:id="@+id/alarm_setting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/action_settings"
+            android:padding="8dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@+id/alarm_switch"
-        />
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/alarm_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

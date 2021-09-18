@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhenAlarmRingActivity">
+
+    <DigitalClock
+        android:id="@+id/digitalClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="32dp"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alarm_name_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AlarmNameTag"
+        android:padding="24dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/digitalClock"
+    />
+
+    <TextView
+        android:id="@+id/alarm_name_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:textColor="@color/design_default_color_secondary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/alarm_name_tag"
+        app:layout_constraintTop_toBottomOf="@+id/digitalClock" />
+
+    <TextView
+        android:id="@+id/alarm_time_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:padding="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_name_print"
+        app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/sub_alarm_time_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:padding="16dp"
+        app:layout_constraintStart_toEndOf="@+id/alarm_time_print"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/alarm_time_print"
+    />
+
+    <SeekBar
+        android:id="@+id/alarm_off_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/invisible"
+        android:layout_margin="56dp"
+        android:thumb="@drawable/ic_baseline_alarm_24"
+        android:max="1"
+        android:min="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_time_print"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
