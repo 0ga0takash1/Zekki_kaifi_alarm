@@ -48,6 +48,7 @@
     <string name="SaveBottom">保存</string>
     <string name="AlarmTitleHint">アラームタイトルを入力</string>
     <string name="Next">次へ</string>
+    <string name="Add"><追加></追加></string>
     <string name="alarm_save_done">alarm save done.</string>
     <string name="input_setting">Sound</string>
 
