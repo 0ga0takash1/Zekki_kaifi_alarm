@@ -19,8 +19,10 @@ public class WhenAlarmRingActivity extends AppCompatActivity {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                if ( progress == 1 && fromUser ) {
+                if ( progress == 100 && fromUser ) {
                     stopService(new Intent(WhenAlarmRingActivity.this, SoundService.class));
+                } else {
+//                    if ()
                 }
             }
 

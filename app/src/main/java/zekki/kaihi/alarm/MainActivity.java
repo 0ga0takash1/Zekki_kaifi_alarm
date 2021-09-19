@@ -75,7 +75,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplication(), SettingsActivity.class);
             startActivity(intent);
         } else if (item.getItemId() == R.id.action_delete) {
-
+            Intent intent = new Intent(getApplication(), DeleteActivity.class);
+            startActivity(intent);
         } else if (item.getItemId() == R.id.action_license) {
             CreateLicence();
         }

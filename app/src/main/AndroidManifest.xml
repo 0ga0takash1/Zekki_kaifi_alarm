@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zekki_kaihi_alarm">
         <activity
+            android:name=".DeleteActivity"
+            android:exported="true" />
+        <activity
             android:name=".WhenAlarmRingActivity"
             android:exported="true" />
         <activity

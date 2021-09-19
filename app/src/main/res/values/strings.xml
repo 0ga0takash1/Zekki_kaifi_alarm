@@ -49,6 +49,10 @@
     <string name="AlarmTitleHint">アラームタイトルを入力</string>
     <string name="Next">次へ</string>
     <string name="alarm_save_done">alarm save done.</string>
+    <string name="input_setting">Sound</string>
+
+    <!-- Delete Activity -->
+    <string name="DeleteBottom">削除</string>
 
     <!-- When alarm ring Activity -->
     <string name="AlarmNameTag">このアラーム→</string>

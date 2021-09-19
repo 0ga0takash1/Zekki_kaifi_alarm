@@ -1,6 +1,7 @@
 package zekki.kaihi.alarm;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceFragmentCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.ContentValues;
