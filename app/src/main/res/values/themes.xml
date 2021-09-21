@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Zekki_kaihi_alarm" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/white2</item>
+        <item name="colorPrimary">@color/black3</item>
         <item name="colorPrimaryVariant">@color/black2</item>
         <item name="colorOnPrimary">@color/white2</item>
         <!-- Secondary brand color. -->
