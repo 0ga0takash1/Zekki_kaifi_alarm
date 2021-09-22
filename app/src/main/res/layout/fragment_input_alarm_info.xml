@@ -8,8 +8,10 @@
     tools:context=".InputAlarmInfoFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/input_alarm_info_background"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"

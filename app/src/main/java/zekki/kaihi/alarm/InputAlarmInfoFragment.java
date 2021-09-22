@@ -1,15 +1,19 @@
 package zekki.kaihi.alarm;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class InputAlarmInfoFragment extends Fragment {
@@ -53,6 +57,17 @@ public class InputAlarmInfoFragment extends Fragment {
             int count = args.getInt("Counter");
             cnt = count + 1;
         }
+
+        InputMethodManager inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+        ConstraintLayout background = view.findViewById(R.id.input_alarm_info_background);
+        background.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inputMethodManager.hideSoftInputFromWindow(background.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+                background.requestFocus();
+            }
+        });
+        EditText alarm_name = view.findViewById(R.id.alarm_name_edit);
 
         Button appButton = view.findViewById(R.id.input_setting);
         appButton.setOnClickListener(new View.OnClickListener() {
